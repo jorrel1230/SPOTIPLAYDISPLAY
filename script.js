@@ -163,6 +163,11 @@ function update_datetime() {
         ampm = "PM";
     }
 
+    
+    if (hour == 0) {
+        hour += 12;
+    }
+
     document.getElementById("time").textContent = hour + ":" + min + " " + ampm;
     //console.log(hour + ":" + min + " " + ampm)
 }
@@ -216,6 +221,11 @@ document.addEventListener("DOMContentLoaded", function() {
     if (hour > 12) {
         hour -= 12;
         ampm = "PM";
+    }
+
+    
+    if (hour == 0) {
+        hour += 12;
     }
 
     document.getElementById("time").textContent = hour + ":" + min + " " + ampm;
