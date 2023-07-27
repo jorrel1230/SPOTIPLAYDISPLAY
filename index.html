@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display For Spotify</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="color-thief.umd.js"></script>
+    <script src="script.js"></script>
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body id="body">
+    <button class="buttons" id="butt2" onclick="start_loop()">Start Loop</button>
+    <button class="buttons" id="butt1" onclick="spotify_auth()">Spotify Authentication</button>
+
+
+    <div class="img_container" id="img_container">
+        <img id="album_img" src=""/>
+        <img id="vinyl_disk" src="vinyl_jrrl.png">
+    </div>
+
+    <img class="vinyl_disk_still" src="cropped_vinyl.png">
+    <div class="cd" id="outer2"></div>
+    <div class="cd" id="outer1"></div>
+    
+
+    <div class="space"></div>
+    
+    <div class="song_info_container">
+        <p class="info" id="song_title">Spotify Isn't Initialized Yet!</p>
+        <p class="info" id="album_title">Open Spotify on any of your devices.</p>
+        <p class="info" id="artist_name">And/Or Authenticate with the buttons below.</p>
+    </div>
+
+    <div id="song_progress">
+        <div id="progress_bar"></div>
+    </div>
+
+
+    <div class="datetime">
+        <p id="date">null</p>
+        <h2 id="time">null</h2>
+    </div>
+
+    <div class="user_info">
+        <p id="username"></p>
+    </div>
+
+    <div class="bottom_line">
+        <img src="Spotify_Logo.png">
+    </div>
+    
+
+    
+
+</body>
+</html>
